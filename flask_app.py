@@ -14,7 +14,10 @@ jwt = JWTManager(app)
 @app.route('/login', methods=['POST'])
 def login():
     auth = request.authorization
-    if not auth or not auth.username or not auth.password or USERS.get(auth.username) != auth.password:
+    if not auth or not auth.username or not auth.password:
+        return jsonify({'message': 'The server cannot process the request'}), 400
+    
+    if USERS.get(auth.username) != auth.password:
         return jsonify({'message': 'Could not verify', 'WWW-Authenticate': 'Basic auth="Login required"'}), 401
 
     access_token = create_access_token(identity=auth.username)
