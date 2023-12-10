@@ -89,3 +89,25 @@ Body:
 - Ensure proper input validation before processing requests.
 - Use the JWT token in the header for authorized endpoints.
 - Modify the expiration time for tokens based on your requirements.
+- 
+## Code Structure and Readability
+- **Modularization:** 
+  Broken the code into modular components (e.g., separate files for routes, utilities, models) for better organization and maintainability.
+- **Comments and Documentation:**
+  Provided  comments and docstrings to explain complex logic, endpoints, and functions.
+- **Consistent Coding Style:**
+  Followed PEP 8 guidelines for Python code consistency.
+## Security
+- **Input Validation:**
+  Validated user inputs to prevent common security vulnerabilities like SQL injection, cross-site scripting (XSS), etc.
+Secure Password Handling: Store passwords securely using hashed algorithms (e.g., bcrypt) instead of storing plaintext passwords.
+- **JWT Security:**
+  Ensure secure handling and validation of JWT tokens. Use strong secret keys and appropriate token expiration times.
+- **HTTPS:**
+  Deploy the application behind HTTPS for encrypted communication between clients and the server.
+## Error Handling
+- **Custom Error Responses:**
+  Provided informative and consistent error messages and status codes for failed requests.
+## Testing
+-**Unit Tests**: 
+Unit tests using frameworks like unittest or pytest to ensure individual components work as expected.
