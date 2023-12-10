@@ -100,7 +100,6 @@ Body:
 ## Security
 - **Input Validation:**
   Validated user inputs to prevent common security vulnerabilities like SQL injection, cross-site scripting (XSS), etc.
-Secure Password Handling: Store passwords securely using hashed algorithms (e.g., bcrypt) instead of storing plaintext passwords.
 - **JWT Security:**
   Ensure secure handling and validation of JWT tokens. Use strong secret keys and appropriate token expiration times.
 - **HTTPS:**
@@ -110,4 +109,4 @@ Secure Password Handling: Store passwords securely using hashed algorithms (e.g.
   Provided informative and consistent error messages and status codes for failed requests.
 ## Testing
 -**Unit Tests**: 
-Unit tests using frameworks like unittest or pytest to ensure individual components work as expected.
+Unit tests using framework - unittest  to ensure individual components work as expected.
