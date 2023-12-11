@@ -9,7 +9,7 @@ This Flask application provides endpoints for user authentication using JWT (JSO
    - Install the required packages using `pip install -r requirements.txt`.
 
 2. **Running the Application**
-   - Run `python your_app_name.py` to start the Flask server.
+   - Run `python flask_app.py` to start the Flask server.
    - Access the application at `http://localhost:5000`.
 
 ## Endpoints
@@ -74,6 +74,7 @@ Body:
 "username": "your_username",
 "password": "your_password"
 }
+edit the username and passwords in the credentials file so that you can use the credentials you prefer
    
 2. **Generate Array:**
 POST http://localhost:5000/generate_array
